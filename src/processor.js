@@ -1,5 +1,5 @@
-const { existsSync, unlinkSync, createReadStream, writeFileSync } = require('fs');
 const { promisify } = require('util');
+const { existsSync, unlinkSync, createReadStream, writeFileSync } = require('fs');
 const { parse } = require('csv-parse');
 const { log } = console;
 
@@ -43,10 +43,9 @@ const extractJobData = async (jobData) => {
                         })
                         .on('end', () => {
                                 // manipulation logic
-                                // log({ results });
 
                                 results = results.reduce((acc, item) => {
-                                        const key = item?.Week_end;
+                                        const key = item.Week_end;
 
                                         acc[key] = acc[key] || [];
                                         acc[key].push(item);

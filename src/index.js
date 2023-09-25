@@ -7,7 +7,7 @@ const { log } = console;
 
 const app = express();
 
-const port = process.env.PORT ?? 3000;
+const port = process.env.NODE_PORT ?? 3000;
 
 const csvPath = join(__dirname, '../employment-indicators.csv');
 
@@ -21,9 +21,9 @@ createBullBoard({
 app.use(express.json());
 app.use('/ui', serverAdapter.getRouter());
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
         res.status(200).json({
-                code: 200,
+                status: 'success',
                 message: 'okay',
         });
         return;
@@ -40,14 +40,12 @@ app.post('/process-csv', async (req, res) => {
 
         const job = await appendJobToQueue(data);
 
-        return res.status(201).json({
-                jobId: job?.id,
-        });
+        return res.status(201).json({ jobId: job?.id });
 });
 
 app.listen(port, async () =>
         log(`
-          environment: ${app.get('env')}
+          environment: ${process.env.NODE_ENV ?? app.get('env')}
           For the UI, open http://localhost:${port}/ui
           Ensure Redis is running on port 6379 by default
           server running on port ${port}
