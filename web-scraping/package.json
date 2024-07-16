@@ -1,0 +1,27 @@
+{
+        "name": "poc-node-web-scraper",
+        "version": "0.0.1",
+        "description": "Web Scraping with Puppeteer and Node.js",
+        "main": "index.js",
+        "scripts": {
+                "start": "node index.js"
+        },
+        "repository": {
+                "type": "git",
+                "url": "git+https://github.com/sheygs13/poc-node-web-scraper.git"
+        },
+        "keywords": [
+                "web_scraper",
+                "node"
+        ],
+        "author": "sheygs13",
+        "license": "ISC",
+        "bugs": {
+                "url": "https://github.com/sheygs13/poc-node-web-scraper/issues"
+        },
+        "homepage": "https://github.com/sheygs13/poc-node-web-scraper#readme",
+        "dependencies": {
+                "express": "^4.18.2",
+                "puppeteer": "^21.3.6"
+        }
+}
