@@ -1,0 +1,23 @@
+{
+  "name": "transaction-concurrency",
+  "version": "1.0.0",
+  "description": "Implementing transaction isolation levels and concurrency",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [
+    "transaction",
+    "ACID",
+    "isolation levels"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "knex": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "web-sockets",
+  "version": "1.0.0",
+  "description": "Web Sockets",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "Olusegun Ekoh",
+  "license": "ISC"
+}
