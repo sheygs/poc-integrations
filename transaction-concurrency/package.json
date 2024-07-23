@@ -1,13 +1,13 @@
 {
   "name": "transaction-concurrency",
   "version": "1.0.0",
-  "description": "Implementing transaction isolation levels and concurrency",
+  "description": "transaction isolation levels and concurrency poc",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js"
   },
   "keywords": [
-    "transaction",
+    "transactions",
     "ACID",
     "isolation levels"
   ],

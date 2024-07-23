@@ -1,7 +1,7 @@
 {
   "name": "server-sent-events",
   "version": "1.0.0",
-  "description": "Implementing serven sent events",
+  "description": "server sent events poc",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js"
