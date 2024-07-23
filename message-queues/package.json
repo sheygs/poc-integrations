@@ -1,7 +1,7 @@
 {
-  "name": "poc-node-message-queue",
+  "name": "message-queues",
   "version": "1.0.0",
-  "description": "Messaging Queue Integrations",
+  "description": "messaging queue pocs",
   "main": "index.js",
   "scripts": {
     "start:prod": "node ./src/index.js",

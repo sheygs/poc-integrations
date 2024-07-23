@@ -2,8 +2,7 @@
 // Reference: https://oauth.net/2/
 // https://developer.okta.com/docs/concepts/oauth-openid/#implicit-flow
 
-const { config } = require('dotenv');
-config();
+require('dotenv/config');
 
 const { log } = console;
 const path = require('path');
